@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <title>SAP采购订单</title>
+    <style type="text/css">
+        table th{
+border:1px;
+        }
+        </style>
+        </head>
 <body>
-Hello World!
+<form>
+    供应商编码<input type="text">
+    采购订单编码<input type="text">
+    采购订单类型:<select name="one">
+        <option value="1"selected>全部</option>
+        <option value="2">2</option>
+        <option value="3" >3</option>
+        <option value="4">4</option>
+    </select>
+    采购订单状态:<select name="two">
+        <option value="5"selected>全部</option>
+        <option value="6">2</option>
+        <option value="7" >3</option>
+        <option value="8">4</option>
+    </select>
+    物料编码/名称<input type="text">
+    <br/>
+    采购组:<select name="three">
+    <option value="9"selected>全部</option>
+    <option value="10">2</option>
+    <option value="11" >3</option>
+    <option value="12">4</option>
+</select>
+    创建时间(起)<input type="text">
+    至<input type="text">
+    <input type="button" style="width:10px; height:10px; border:0; background:url(1.jpg)">
+    <br/>
+    <button type="button">手工同步订单</button><button type="button">审批</button><button type="button">查看</button><button type="button">批量确认</button>
+    <button type="button">批量拒绝</button><button type="button">重新发布</button><button type="button">订单导出</button><button type="button">订单明细导出</button>
+    <br/>
+    <table border="0" >
+    <tr>
+        <th><input type="checkbox">状态</th>
+        <th>采购订单号</th>
+        <th>供应商编码</th>
+        <th>供应商名称</th>
+        <th>公司</th>
+        <th>采购组</th>
+        <th>采购订单类型</th>
+        <th>货币代码</th>
+        <th>创建日期</th>
+    </tr>
+    </table>
+</form>
 </body>
 </html>
